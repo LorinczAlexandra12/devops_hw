@@ -28,4 +28,4 @@ jobs:
               pip install pygithub
           - name: execute py script # run the run.py to get the latest data
             run: |
-              python main.py -t="${{ secrets.GITHUB_TOKEN }}"
+              python main.py -t=${{ secrets.GITHUB_TOKEN }}
